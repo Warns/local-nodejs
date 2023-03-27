@@ -8,6 +8,6 @@ RUN npm install
 RUN npm install -g gulp-cli
 RUN npm install -g sass
 
-COPY . .
+COPY ./src .
 
 CMD ["npm", "run", "dev"]

@@ -7,13 +7,6 @@ services:
       - "3000:3000"
     volumes:
       - ./src:/app
-    command:
-      - /bin/sh
-      - -c
-      - |
-        cd /src &&
-        npm install &&
-        node app.js
+    command: npm start
     environment:
       - NODE_ENV=development
-
