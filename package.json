@@ -1,5 +1,5 @@
 {
-  "name": "your-nodejs-app",
+  "name": "nodejs-app",
   "version": "1.0.0",
   "description": "A Node.js app with Gulp and Sass",
   "main": "index.js",

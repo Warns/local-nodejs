@@ -6,22 +6,14 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./app:/app
+      - ./src:/app
     command:
       - /bin/sh
       - -c
       - |
-        cd /app &&
+        cd /src &&
         npm install &&
         node app.js
     environment:
       - NODE_ENV=development
-    depends_on:
-      - nginx
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "8080:80"
-    volumes:
-      - ./nginx:/etc/nginx/conf.d
-      - ./app:/app
+

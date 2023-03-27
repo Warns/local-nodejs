@@ -7,10 +7,10 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/hello', (req, res) => {
-  res.send('Nodejs app');
+  res.send('Nodejs app, app.js');
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`App listening at http://localhost:${port}`);
   });
   
