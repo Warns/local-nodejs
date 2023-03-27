@@ -1,0 +1,25 @@
+{
+  "name": "your-nodejs-app",
+  "version": "1.0.0",
+  "description": "A Node.js app with Gulp and Sass",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp & node app.js",
+    "install-gulp": "npm install -g gulp-cli",
+    "sass": "gulp sass",
+    "watch": "gulp watch"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.0"
+  },
+  "keywords": [
+    "gulp",
+    "sass"
+  ]
+}
